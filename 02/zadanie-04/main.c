@@ -47,7 +47,7 @@ int main(){
             case 3: printf("Podaj nowy znak: ");
             scanf(" %c", &znak);break;
             case 4: return 0;
-            default: printf("Nie ma takiej opcji!");break;
+            default: printf("Nie ma takiej opcji!\n");break;
         }
     }
     return 0;
