@@ -32,7 +32,7 @@ int suma_nieparzysta(const int tab[], int n){
     int i, suma;
     suma = 0;
     for(i=0; i<n; i++)
-        if(tab[i]%2==1)
+        if(tab[i]%2!=0)
             suma+=tab[i];
     return suma;
 }
@@ -43,7 +43,7 @@ void od_ostatniego(const int tab[], int n){
 }
 int main(){
     int tab[ROZMIAR];
-    int i, wybor;
+    int i;
     float srednia;
     printf("Podaj %d liczb (wzor podawania: 1 2 3...): ", ROZMIAR);
     for(i=0; i<ROZMIAR; i++)
