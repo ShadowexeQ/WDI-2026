@@ -4,6 +4,8 @@ int czy_calkowita(char *ciag){
     i=0;
     if(ciag[0] == '-' && ciag[1]!='\0')
         i=1;
+    if(ciag[0] == '+' && ciag[1]!='\0')
+        i=1;
     while(ciag[i]!='\0')
         if(!(ciag[i] >='0' && ciag[i] <= '9'))
             return 0;
@@ -18,6 +20,10 @@ int konwertuj_na_int(char *ciag){
     znak=1;
     if(ciag[0] == '-'){
         znak = -1;
+        i=1;
+    }
+    if(ciag[0] == '+'){
+        znak = 1;
         i=1;
     }
     while(ciag[i]!='\0'){
